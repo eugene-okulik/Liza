@@ -1,0 +1,11 @@
+text = 'результат операции: 42'
+list_from_text = text.split()
+print(int(list_from_text[-1]) + 10)
+
+text = 'результат операции: 514'
+list_from_text = text.split()
+print(int(list_from_text[-1]) + 10)
+
+text = 'результат работы программы: 9'
+list_from_text = text.split()
+print(int(list_from_text[-1]) + 10)
