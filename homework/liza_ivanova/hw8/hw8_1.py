@@ -1,13 +1,15 @@
 import sys
 sys.set_int_max_str_digits(100000)
+
+
 def fibonachiNums():
     num1 = 0
     num2 = 1
     while True:
         yield num1
         old_num1 = num1
-        num1  = num2
-        num2 = old_num1  + num2
+        num1 = num2
+        num2 = old_num1 + num2
 
 
 fibonachiNums = fibonachiNums()
