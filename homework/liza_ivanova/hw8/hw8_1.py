@@ -9,15 +9,16 @@ def fibonachiNums():
         num1  = num2
         num2 = old_num1  + num2
 
+
 fibonachiNums = fibonachiNums()
 
 for i in range(1, 100000000):
     fibbonachiNum = next(fibonachiNums)
     if i == 5:
-        print(f"Пятое число: ", fibbonachiNum)
+        print(f"Пятое число: {fibbonachiNum}")
     if i == 200:
-        print(f"Двухсотое число: ", fibbonachiNum)
+        print(f"Двухсотое число: {fibbonachiNum}")
     if i == 1000:
-        print(f"Тысячное число: ", fibbonachiNum)
+        print(f"Тысячное число: {fibbonachiNum}")
     if i == 100000:
-        print(f"Cтотысячное число: ", fibbonachiNum)
+        print(f"Cтотысячное число: {fibbonachiNum}")
