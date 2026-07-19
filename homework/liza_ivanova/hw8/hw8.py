@@ -1,14 +1,12 @@
 import random
 
-
 def salaryBonusResult():
     salary = int(input("Введите зарплату: "))
     bonus = random.choice([True, False])
-    if bonus:
+    if bonus == True:
         salary += random.randint(0, 30000)
-        yield salary
+        return salary
     else:
-        yield salary
+        return salary
 
-
-print(f"${next(salaryBonusResult())}")
+print(f"${salaryBonusResult()}")

@@ -14,7 +14,7 @@ def fibonachiNums():
 
 fibonachiNums = fibonachiNums()
 
-for i in range(1, 100000000):
+for i in range(1, 100001):
     fibbonachiNum = next(fibonachiNums)
     if i == 5:
         print(f"Пятое число: {fibbonachiNum}")
