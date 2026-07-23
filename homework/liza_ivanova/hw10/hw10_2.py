@@ -8,11 +8,11 @@ def universal_func(func):
         number2 = args[1]
         if number1 == number2:
             operation = '+'
-        if number1 > number2:
+        elif number1 > number2:
             operation = '-'
-        if number2 > number1:
+        elif number2 > number1:
             operation = '/'
-        if number2 < 0 or number1 < 0:
+        elif number2 < 0 or number1 < 0:
             operation = '*'
 
         return func(number1, number2, operation)
@@ -25,7 +25,7 @@ def calc(first, second, operation):
     if operation == '+':
         return first + second
     elif operation == '-':
-        return second - first
+        return first - second
     elif operation == '/':
         return first / second
     elif operation == '*':
